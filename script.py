@@ -21,9 +21,11 @@ if debug >= 1:
 # M73 P86 R6
 #      %%  t
 
-with open(sourceFile, "r+") as file:
+with open(sourceFile, "r") as file:
     lines = file.readlines()
+    file.close()
 
+with open(sourceFile, "w") as file:
     for line_number in range(len(lines)):
         new_line = lines[line_number]
 
