@@ -15,10 +15,7 @@ Add: `"[python directory]\python.exe"  "[script directory]\script.py";`
 # why does this exist
 https://forum.duet3d.com/topic/14675/using-prusaslicers-m73-progress-to-run-macro
 
-Marlin issues
 https://github.com/MarlinFirmware/Marlin/issues/18648#issuecomment-659171081
-
-Prusaslicer issues
 
 https://github.com/prusa3d/PrusaSlicer/issues/4593#issue-668668940
 
