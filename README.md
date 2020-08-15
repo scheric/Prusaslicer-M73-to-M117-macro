@@ -1,4 +1,4 @@
-# prusaslicer m73 conversion to M117 macro
+# Prusaslicer m73 conversion to M117 macro
 PrusaSlicer M73 percentage and time conversion to M117 for LCD character display for standard Marlin firmware
 
 # Installation instructions
@@ -12,7 +12,7 @@ Go to: `Print settings` > `Output options` > `Post-processing scripts`
 
 Add line: `"[python directory]\python.exe"  "[script directory]\script.py";`
 
-# why does this exist
+# Why does this exist
 https://forum.duet3d.com/topic/14675/using-prusaslicers-m73-progress-to-run-macro
 
 https://github.com/MarlinFirmware/Marlin/issues/18648#issuecomment-659171081
