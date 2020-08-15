@@ -41,8 +41,7 @@ with open(sourceFile, "r+") as file:
                 parsed = string.split(' ')
 
                 parsed[1] = parsed[1][1:]
-                parsed[2] = parsed[2][:-1]
-
+                parsed[2] = parsed[2][1:-1]
 
                 output = 'm117 ' + parsed[1] + '% ' + parsed[2] + " minutes left"
 
