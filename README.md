@@ -10,7 +10,7 @@ PrusaSlicer M73 percentage and time conversion to M117 for LCD character display
 ### 3. Configuration in PrusaSlicer 
 Go to: `Print settings` > `Output options` > `Post-processing scripts`
 
-Add: `"[python directory]\python.exe"  "[script directory]\script.py";`
+Add line: `"[python directory]\python.exe"  "[script directory]\script.py";`
 
 # why does this exist
 https://forum.duet3d.com/topic/14675/using-prusaslicers-m73-progress-to-run-macro
