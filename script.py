@@ -3,9 +3,6 @@
 @author: SCHERIC
 """
 
-
-# !/usr/bin/python
-
 import sys
 import re
 import time
@@ -66,4 +63,4 @@ if debug >= 1:
     print(f"elapsed time: {round(time_end - time_start,4)} S")
 
 if debug >= 1:
-    sec = input('wait for user input.\n')
+    wait = input('wait for user input.\n')
