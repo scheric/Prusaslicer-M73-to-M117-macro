@@ -13,7 +13,7 @@ sourceFile = sys.argv[1]
 
 add_count = 0
 
-debug = 1
+debug = 0
 
 if debug >= 1:
     print(sourceFile)
