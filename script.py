@@ -10,10 +10,15 @@
 import sys
 import re
 import os
+import time
+
+time_start = time.time()
 
 sourceFile=sys.argv[1]
 
 add_count=0
+
+debug = 1
 
 # Read the ENTIRE g-code file into memory
 with open(sourceFile, "r") as f:
@@ -24,8 +29,10 @@ os.rename(sourceFile,sourceFile)
 destFile = re.sub('\.gcode$','',sourceFile)
 destFile = destFile + '.gcode'
 
-print(sourceFile)
-print(destFile)
+if debug >=1:
+    print(sourceFile)
+    print(destFile)
+    
 #M73 P86 R6
 #     %%  t
 
@@ -52,7 +59,8 @@ with open(destFile, "w") as of:
                     
                     output = 'm117 ' + var[1] + '% ' + var[2] + " minutes"
                     
-                    print(str(stringMatch) + str(output))
+                    if debug >=2:
+                        print(str(stringMatch) + str(output))
             
                     of.write(f"{output}\n")
 
@@ -64,7 +72,12 @@ with open(destFile, "w") as of:
 of.close()
 f.close()
 
-print(f"added {add_count} extra m117 lines from {destFile}")
+time_end = time.time()
 
-#sec = input('wait for user input.\n')
+if debug >=1:
+    print(f"added {add_count} extra m117 lines from {destFile}")
+    print(f"elapsed time: {round(time_end - time_start,4)} S")
+
+if debug >=1:
+    sec = input('wait for user input.\n')
 
