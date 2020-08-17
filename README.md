@@ -1,9 +1,10 @@
-# Prusaslicer m73 conversion to M117 macro
+# Prusaslicer M73 conversion to M117 macro
 PrusaSlicer M73 percentage and time conversion to M117 for LCD character display for standard Marlin firmware
 
 # Installation instructions
 
-### 1. Install python and remember the installation directory (This version was tested with python 3)
+### 1. Install python and remember the installation directory 
+This version was tested with python 3
 
 ### 2. Copy script.py and remember storage location     
 
